@@ -12,13 +12,12 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Column(
           children: [
-            Image.network(
-                "https://img.freepik.com/free-vector/hotel-booking_203633-529.jpg"),
+            Image.asset("images/homepage.jpeg"),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -26,7 +25,7 @@ class _HomeState extends State<Home> {
                   MaterialPageRoute(builder: (context) => const BookPage()),
                 );
               },
-              child: Text("CLICK HERE TO BOOK NOW"),
+              child: const Text("CLICK HERE TO BOOK NOW"),
             )
           ],
         ),
