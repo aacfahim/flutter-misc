@@ -12,13 +12,14 @@ class Home extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
           resizeToAvoidBottomInset: false,
+          //backgroundColor: Colors.white.withOpacity(0.95),
           body: Stack(children: [
             Row(
               children: [
                 Expanded(
                     flex: 2,
                     child: Container(
-                      color: Colors.white,
+                      color: Colors.blue.withOpacity(0.08),
                       height: double.infinity,
                     )),
                 Expanded(
