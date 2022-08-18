@@ -1,5 +1,6 @@
 import 'package:clothing_app/models/catagory_list.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Details extends StatefulWidget {
   Details(this.itemsList);
@@ -77,18 +78,26 @@ class _DetailsState extends State<Details> {
                       ],
                     ),
                   ),
-                  Text("${widget.itemsList!.cl_name}"),
+                  Text(
+                    '${widget.itemsList!.cl_name}',
+                    style: GoogleFonts.ptSerif(fontSize: 20),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.star, color: Colors.orange),
-                      Text("4.8",
-                          style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text("(2.6k+ review)",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            decoration: TextDecoration.underline,
-                          )),
+                      Text(
+                        "4.8",
+                        style: GoogleFonts.ptSerif(
+                            textStyle: TextStyle(fontWeight: FontWeight.bold),
+                            fontSize: 15),
+                      ),
+                      Text(
+                        "(2.6k+ review)",
+                        style: GoogleFonts.ptSerif(
+                            textStyle: TextStyle(fontWeight: FontWeight.bold),
+                            fontSize: 15),
+                      ),
                     ],
                   ),
                   Padding(
@@ -109,8 +118,9 @@ class _DetailsState extends State<Details> {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text("Select Size",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 25)),
+                        style: GoogleFonts.ptSerif(
+                            textStyle: TextStyle(fontWeight: FontWeight.bold),
+                            fontSize: 25)),
                   ),
                   Container(
                     height: 45,
@@ -146,8 +156,9 @@ class _DetailsState extends State<Details> {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text("Select Color",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 25)),
+                        style: GoogleFonts.ptSerif(
+                            textStyle: TextStyle(fontWeight: FontWeight.bold),
+                            fontSize: 25)),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -168,7 +179,10 @@ class _DetailsState extends State<Details> {
                           alignment: Alignment.centerLeft,
                           child: Text(
                             "${widget.itemsList!.price}",
-                            style: TextStyle(fontSize: 35),
+                            style: GoogleFonts.philosopher(
+                                textStyle:
+                                    TextStyle(fontWeight: FontWeight.bold),
+                                fontSize: 30),
                           )),
                       Container(
                           height: 50,
