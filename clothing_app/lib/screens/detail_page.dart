@@ -145,7 +145,8 @@ class _DetailsState extends State<Details> {
                                     ? Colors.orange
                                     : Colors.white,
                                 border: Border.all(color: Colors.grey)),
-                            child: Text("${sizes[index]}"),
+                            child: Text("${sizes[index]}",
+                                style: GoogleFonts.ptSerif(fontSize: 18)),
                           ),
                         );
                       },
